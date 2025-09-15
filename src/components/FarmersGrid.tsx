@@ -9,7 +9,7 @@ interface Farmer {
   id: number;
   name: string;
   location: string;
-  produceType: string;
+  productType: string;
   image: string;
 }
 
@@ -18,14 +18,14 @@ const farmers: Farmer[] = [
     id: 1, 
     name: "Ravi Kumar", 
     location: "Pune", 
-    produceType: "Vegetables", 
+    productType: "Vegetables", 
     image: farmerRavi 
   },
   { 
     id: 2, 
     name: "Asha Patil", 
     location: "Nashik", 
-    produceType: "Fruits", 
+    productType: "Fruits", 
     image: farmerAsha 
   },
 ];
@@ -101,7 +101,7 @@ const FarmersGrid = () => {
                           variant="outline" 
                           className="border-primary/20 text-primary bg-primary/5"
                         >
-                          {farmer.produceType}
+                          {farmer.productType}
                         </Badge>
                         
                         <motion.button
